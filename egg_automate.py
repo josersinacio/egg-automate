@@ -9,7 +9,10 @@ def focus_egg():
 
     egg_idx = next((i for i, x in enumerate(eggs) if x.title == window_name), None)
 
-    eggs[egg_idx].activate() if egg_idx is not None else quit_earlier() 
+    if egg_idx is not None:
+        eggs[egg_idx].activate()
+    else:
+        quit_earlier()
 
 def quit_earlier():
     print('!!! Egg not found !!!')
@@ -19,7 +22,7 @@ def quit_earlier():
 def run_loop():
     focus_egg()
 
-    while 1:   
+    while 1:
         time.sleep(0.05)
 
         try:
