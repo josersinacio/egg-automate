@@ -4,5 +4,5 @@ Simple auto clicker for the game [Egg](https://store.steampowered.com/app/278484
 
 <hr />
 
-![Sample](./samples/sample-1.gif)
+![Sample](./samples/sample-1.gif){:target="_blank"}
 
