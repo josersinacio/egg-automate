@@ -1,6 +1,6 @@
-import pyautogui
 import time
 import sys
+import pyautogui
 
 window_name = 'Egg'
 
@@ -9,15 +9,14 @@ def focus_egg():
 
     egg_idx = next((i for i, x in enumerate(eggs) if x.title == window_name), None)
 
-    eggs[egg_idx].activate() if egg_idx is not None else quit_earlier()
-    
+    eggs[egg_idx].activate() if egg_idx is not None else quit_earlier() 
 
 def quit_earlier():
     print('!!! Egg not found !!!')
-    exit(-1)
+    sys.exit(-1)
 
 
-def run_loop(): 
+def run_loop():
     focus_egg()
 
     while 1:   
